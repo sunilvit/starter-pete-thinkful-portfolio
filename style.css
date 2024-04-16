@@ -2,77 +2,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
-  background-color: #eae2b7;
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
+    background-color: #eae2b7;
+    color: #003049;
+    font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
 }
 
 /* Headings */
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
+    font-family: "Playfair Display", Times, serif;
+    text-align: center;
 }
 
 /* Header */
 header {
-  text-align: center;
+    text-align: center;
 }
 
 /* Containers */
 div {
-  background-color: #eae2b7;
-  margin: auto;
-  width: 600px;
+    background-color: #eae2b7;
+    margin: auto;
+    width: 600px;
 }
 
 article {
-  padding: 50px 0;
+    padding: 50px 0;
 }
 
 article div {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 /* Paragraphs */
-p {
-  line-height: 1.5;
+p, ul {
+    line-height: 1.5;
+    text-align: left;
 }
 
 /* Links */
 a:link {
-  color: #d62828;
+    color: #d62828;
 }
 
 a:hover {
-  color: #f77f00;
+    color: #f77f00;
 }
 
 nav a {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 /* Images */
 img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
 
 .image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
+    border: 2px solid #003049;
+    border-radius: 50%;
 }
 
 /* Footer */
-footer {
-  text-align: center;
+footer p {
+    text-align: center;
 }
 
 /* Other page elements */
 hr {
-  border: 1px solid black;
+    border: 1px solid black;
+}
+
+/* Align Header items using flex in row and align content vertically */
+.header-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Align profile image and intro horizontally*/
+#about-image-intro {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Set font size as per requirement and Align center as per mock*/
+.project-description {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Horizontally display all portfolio items*/
+.portfolio-items {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Custom spacing between portfolio items*/
+div.portfolio-items section {
+    padding: 0 0 0 2px;
 }
